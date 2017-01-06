@@ -103,48 +103,13 @@
         (recur (inc i) (rest s) (if (= 0 (mod i n)) ret (conj ret (first s)))))))
   3 [1 2 3 4 5 6])
 
-;;#51 - solveed
+;;#51
 (= [1 2 [3 4 5] [1 2 3 4 5]] (let [[a b & c :as d] [1 2 3 4 5]] [a b c d]))
 
 ;;#61 - Map Construction
 ((fn [set1 set2]
    (into {} (map vector set1 set2)))
   [:a :b :c] [1 2 3])
-
-;;#62 ******** Re-implement Iterate **********
-(__ #(* 2 %) 1)
-
-(take 5 (iterate inc 1))
-(take 5
-      ((fn [myfunc seed]
-         (partial myfunc seed))
-        inc 1))
-
-;; Here is one that I could certainly use some help in understanding
-
-
-;;*******  #49 split a sequence *********
-3 [1 2 3 4 5 6]
-1 [:a :b :c :d]
-(partition 3 [1 2 3 4 5 6])
-(first *1)
-(rest *2)
-
-((fn [n s]
-   (conj
-     (list (mapcat conj (rest (partition n s))))
-     (first (partition n s)))) 3 [1 2 3 4 5 6])
-;; for some reason this works in my REPL, but not in the solution set
-
-;;****** #83 Half-truth *******
-
-((fn [& b]
-    (let [_ (println (str b))]
-      (and (not (and b)) (or b))
-   )
-   ) true false)
-;; I'm not really sure why this isn't working.  Logic seems to be good.  It
-;; seems to be something with how I'm passing multiple paramaters
 
 ;;#66 Greatest Common Divisor - Solved
 (fn [a b]
@@ -153,24 +118,28 @@
     (recur b (mod a b)))
   )
 
-;; ******* #81 Set Intersection ********
-#{0 1 2 3} #{2 3 4 5})
-#{2 3}
+;; #166 Comparisons
+(= :gt (__ < 5 1))
+(fn [x y] (< (count x) (count y))) "pear" "plum"
 
-(
-  (fn [set1 set2]
-    (map set1 set2))
-  #{0 1 2 3} #{2 3 4 5})
+((fn [f x y]
+   (if (f x y)
+     :lt
+     (if (f y x)
+       :gt
+       :eq)))
+  < 1 1)
 
-(fn [set]
-  (map #(some? %) set))
+(exp 3 3)
 
-(map #(some? %) *1)
+;; #90 Cartesian Product
+#{1 2} #{3 4}
 
-(keep-indexed
-  (fn [set] (map #(some? %) set))
-  *1)
-(filter *1 *1)
+(map vector #{1 2} #{1 2 3 4})
+(zipmap #{3 4 5 6} #{1 2} )
 
-;; I could use some help because I thought I did this better with the
-;; functions, but I'm still failing at it
+
+(fn [set1 set2]
+
+  )
+

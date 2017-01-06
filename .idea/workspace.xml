@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2f2d2da-9f65-45dd-a612-7a1a3e5329da" name="Default" comment="" />
+    <list default="true" id="e2f2d2da-9f65-45dd-a612-7a1a3e5329da" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/replstate.xml" afterPath="$PROJECT_DIR$/.idea/replstate.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hello_world/Easy.clj" afterPath="$PROJECT_DIR$/src/hello_world/Easy.clj" />
+    </list>
     <ignored path="hello-world.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -64,14 +69,27 @@
       <file leaf-file-name="Easy.clj" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hello_world/Easy.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="113" column="46" lean-forward="false" selection-start-line="113" selection-start-column="46" selection-end-line="113" selection-end-column="46" />
+            <state relative-caret-position="401">
+              <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="help_requested.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hello_world/help_requested.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="671">
+              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -84,6 +102,7 @@
         <option value="$PROJECT_DIR$/project.clj" />
         <option value="$PROJECT_DIR$/src/hello_world/core.clj" />
         <option value="$PROJECT_DIR$/src/hello_world/Easy.clj" />
+        <option value="$PROJECT_DIR$/src/hello_world/help_requested.clj" />
       </list>
     </option>
   </component>
@@ -94,9 +113,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="960" />
-    <option name="y" value="23" />
-    <option name="width" value="960" />
+    <option name="x" value="2364" />
+    <option name="y" value="-277" />
+    <option name="width" value="925" />
     <option name="height" value="1177" />
   </component>
   <component name="ProjectView">
@@ -118,21 +137,21 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hello-world" />
+              <option name="myItemId" value="4clojure" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hello-world" />
+              <option name="myItemId" value="4clojure" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hello-world" />
+              <option name="myItemId" value="4clojure" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hello-world" />
+              <option name="myItemId" value="4clojure" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -162,8 +181,9 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="cursive.last.file.extension./Users/travismarsh/dev/lein/hello-world/src" value="clj" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="cursive.last.file.extension./Users/travismarsh/dev/4clojure/src" value="clj" />
   </component>
-  <component name="ReplState" timestamp="1483645353123">{:repl-history {:ide [], :local [&quot;(not (and true))&quot; &quot;(and (not (and true)) (or true))&quot; &quot;(doc reduce)&quot; &quot;(reduce (fn [v1 v2] (and (not (and v1 v2)) (or v1 v2))) true true)&quot; &quot;(and true false)&quot; &quot;(not (and true false))&quot; &quot;(or true false)&quot; &quot;(and (not (and true false)) (or true false))&quot; &quot;(and '(true true))&quot; &quot;((fn [&amp; args] (and (not (and args)) (or args))) false false)&quot; &quot;((fn [&amp; args] (and (not (and args)) (or args))) true true)&quot; &quot;((fn [&amp; args] (and (not (and args)) (or args))) true)&quot; &quot;((fn [&amp; args] (and (not (and args)) (or args))) true false)&quot; &quot;((fn [&amp; args] (doall\n                (println args)\n                (and (not (and args)) (or args))) true false))&quot; &quot;((fn [&amp; [args]] (doall\n                (println args)\n                (and (not (and args)) (or args))) true false))&quot; &quot;((fn [a b ] (doall\n                (println a b)\n                (and (not (and a b)) (or a b))) true false))&quot; &quot;((fn [a b] \n   (doall\n     (println (str a b))\n     (and (not (and a b)) (or a b))) true false))&quot; &quot;((fn [a b]\n   (doall\n     (prinln (str a b))\n     (and (not (and a b)) (or a b)))) true false)&quot; &quot;((fn [a b]\n   (doall\n     ;(prinln (str a b))\n     (and (not (and a b)) (or a b)))) true false)&quot; &quot;((fn [a b]\n   ;(prinln (str a b))\n   (and (not (and a b)) (or a b))) true false)&quot; &quot;((fn [a b]\n   ;(prinln (str a b))\n   (and (not (and a b)) (or a b))) true true)&quot; &quot;((fn [&amp; b]\n   ;(prinln (str a b))\n   (and (not (and b)) (or b))) true true)&quot; &quot;((fn [&amp; b]\n   ;(prinln (str a b))\n   (and (not (and b)) (or b))) true false)&quot; &quot;((fn [&amp; b]\n   (doall\n     (prinln b)\n     (and (not (and b)) (or b))  \n     )\n   ) true false)&quot; &quot;((fn [&amp; b]\n   (doall\n     (println b)\n     (and (not (and b)) (or b))  \n     )\n   ) true false)&quot; &quot;((fn [a b]\n   (doall\n     (println b)\n     (and (not (and a b)) (or a b))  \n     )\n   ) true false)&quot; &quot;((fn [a b]\n   (doall\n     (println (str b))\n     (and (not (and a b)) (or a b))\n     )\n   ) true false)&quot; &quot;((fn [a b]\n   (doall\n     ;(println (str b))\n     (and (not (and a b)) (or a b))\n     )\n   ) true false)&quot; &quot;((fn [a b]\n   ; (doall\n   ;(println (str b))\n   (and (not (and a b)) (or a b))\n   ;)\n   ) true false)&quot; &quot;(println (str true))&quot; &quot;((fn [a b]\n    (doall\n   (println (str b))\n   (and (not (and a b)) (or a b))\n   )\n   ) true false)&quot; &quot;((fn [a b]\n    (let [_ (println (str b))]\n      (and (not (and a b)) (or a b))\n   )\n   ) true false)&quot; &quot;((fn [a b]\n    (let [_ (println (str a))]\n      (and (not (and a b)) (or a b))\n   )\n   ) true false)&quot; &quot;(or '(true false))&quot; &quot;(and '(true false))&quot; &quot;(and *1 *2)&quot; &quot;((fn [&amp; b]\n    (let [_ (println (str b))]\n      (and (not (and b)) (or b))\n   )\n   ) true false)&quot; &quot;((fn [n s]\n   (conj\n     (list (mapcat conj (rest (partition n s))))\n     (first (partition n s)))) 3 [1 2 3 4 5 6])&quot; &quot;(mapcat [:a :b :c] [1 2 3])&quot; &quot;(apply cons [:a :b :c] [1 2 3])&quot; &quot;(map cons [:a :b :c] [1 2 3])&quot; &quot;(zipmap [:a :b :c] [1 2 3])&quot; &quot;(partition 2 *2)&quot; &quot;(partition-all *3)&quot; &quot;(partition-all *1)&quot; &quot;(partition-all 2 *2)&quot; &quot;(partition-all 2 *1)&quot; &quot;(interleave [:a :b :c] [1 2 3])&quot; &quot;(interleave  [1 2 3] [:a :b :c])&quot; &quot;(partition 2 *1)&quot; &quot;(keep-indexed *1)&quot; &quot;(doc filter)&quot; &quot;(doc keep-indexed)&quot; &quot;(keep-indexed *1 *1)&quot; &quot;(keep-indexed #(true? %) *1)&quot; &quot;(true? *1)&quot; &quot;(fn [set]\n  (map true? set))&quot; &quot;(map true? *1)&quot; &quot;(map #(not= nil? %) *1)&quot; &quot;(map #(nil? %) *1)&quot; &quot;(complement *1)&quot; &quot;(doc complement)&quot; &quot;(map #(complement nil? %) *1)&quot; &quot;(map #(complement (nil? %)) *2)&quot; &quot;(map #(complement (nil? %)) *1)&quot; &quot;(\n  (fn [set1 set2]\n   (map set1 set2))\n  #{0 1 2 3} #{2 3 4 5})&quot; &quot;(\n  (fn [set1 set2]\n    (some? (map set1 set2)))\n  #{0 1 2 3} #{2 3 4 5})&quot; &quot;(\n  (fn [set1 set2]\n    (map some? (map set1 set2)))\n  #{0 1 2 3} #{2 3 4 5})&quot; &quot;(keep-indexed\n  (fn [set] (map #(some? %) set))\n  *1)&quot; &quot;(map vector [:a :b :c] [1 2 3])&quot; &quot;(into {} *1)&quot; &quot;(intro {} (map vector [:a :b :c] [1 2 3]))&quot; &quot;(into {} (map vector [:a :b :c] [1 2 3]))&quot; &quot;((fn [set1 set2]\n   (into {} (map vector set1 set2)))\n  [:a :b :c] [1 2 3])&quot; &quot;(map #(some? %) *1)&quot; &quot;(\n  (fn [set1 set2]\n    (map set1 set2))\n  #{0 1 2 3} #{2 3 4 5})&quot; &quot;(filter *1 *1)&quot; &quot;(defn gcd [a b]\n  (if (zero? b)\n    a\n    (doall\n      (println a)\n      (println b)\n      (recur b (mod a b)))))&quot; &quot;(doc doall)&quot; &quot;(doc do)&quot; &quot;(defn gcd [a b]\n  (if (zero? b)\n    a\n    (do\n        (println a)\n        (println b)\n        (recur b (mod a b)))))&quot; &quot;(doc str)&quot; &quot;(def myvar 1)&quot; &quot;(println (str \&quot;My Var is \&quot; myvar))&quot; &quot;(def myvar2 2)&quot; &quot;(println (str \&quot;My Var is \&quot; myvar \&quot; and MyVar2 is \&quot; myvar2))&quot; &quot;(defn gcd [a b]\n  (if (zero? b)\n    a\n    (recur b (mod a b))))&quot; &quot;(defn gcd [a b]\n  (if (zero? b)\n    a\n    (do\n      (println a)\n      (println b)\n      (recur b (mod a b))))\n  )&quot; &quot;(defn gcd [a b]\n  (if (zero? b)\n    a\n    (do\n      (println (str \&quot;A \&quot; a))\n      (println b)\n      (recur b (mod a b))))\n  )&quot; &quot;(defn gcd [a b]\n  (if (zero? b)\n    a\n    (do\n      (println (str \&quot;A \&quot; a str \&quot;B \&quot; b))\n      (recur b (mod a b))))\n  )&quot; &quot;(defn gcd [a b]\n  (if (zero? b)\n    a\n    (do\n      (println (str \&quot;A \&quot; a \&quot;B \&quot; b))\n      (recur b (mod a b))))\n  )&quot; &quot;(defn gcd [a b]\n  (if (zero? b)\n    a\n    (do\n      (println (str \&quot;A \&quot; a \&quot;   B \&quot; b))\n      (recur b (mod a b))))\n  )&quot; &quot;(gcd 1023 858)&quot; &quot;(mod 858 165)&quot; &quot;(mod 48 18)&quot; &quot;(mod 18 12)&quot; &quot;(mod 12 6)&quot; &quot;(gcd 48 18)&quot; &quot;(take 5 (iterate inc 1))&quot; &quot;(take 5 \n      ((fn [myfunc seed]\n         (myfunc seed)) \n        inc 1))&quot; &quot;(take 5\n      ((fn [myfunc seed]\n         (partial myfunc seed))\n        inc 1))&quot;], :remote []}}</component>
+  <component name="ReplState" timestamp="1483666263470">{:repl-history {:ide [], :local [&quot;(not (and true))&quot; &quot;(and (not (and true)) (or true))&quot; &quot;(doc reduce)&quot; &quot;(reduce (fn [v1 v2] (and (not (and v1 v2)) (or v1 v2))) true true)&quot; &quot;(and true false)&quot; &quot;(not (and true false))&quot; &quot;(or true false)&quot; &quot;(and (not (and true false)) (or true false))&quot; &quot;(and '(true true))&quot; &quot;((fn [&amp; args] (and (not (and args)) (or args))) false false)&quot; &quot;((fn [&amp; args] (and (not (and args)) (or args))) true true)&quot; &quot;((fn [&amp; args] (and (not (and args)) (or args))) true)&quot; &quot;((fn [&amp; args] (and (not (and args)) (or args))) true false)&quot; &quot;((fn [&amp; args] (doall\n                (println args)\n                (and (not (and args)) (or args))) true false))&quot; &quot;((fn [&amp; [args]] (doall\n                (println args)\n                (and (not (and args)) (or args))) true false))&quot; &quot;((fn [a b ] (doall\n                (println a b)\n                (and (not (and a b)) (or a b))) true false))&quot; &quot;((fn [a b] \n   (doall\n     (println (str a b))\n     (and (not (and a b)) (or a b))) true false))&quot; &quot;((fn [a b]\n   (doall\n     (prinln (str a b))\n     (and (not (and a b)) (or a b)))) true false)&quot; &quot;((fn [a b]\n   (doall\n     ;(prinln (str a b))\n     (and (not (and a b)) (or a b)))) true false)&quot; &quot;((fn [a b]\n   ;(prinln (str a b))\n   (and (not (and a b)) (or a b))) true false)&quot; &quot;((fn [a b]\n   ;(prinln (str a b))\n   (and (not (and a b)) (or a b))) true true)&quot; &quot;((fn [&amp; b]\n   ;(prinln (str a b))\n   (and (not (and b)) (or b))) true true)&quot; &quot;((fn [&amp; b]\n   ;(prinln (str a b))\n   (and (not (and b)) (or b))) true false)&quot; &quot;((fn [&amp; b]\n   (doall\n     (prinln b)\n     (and (not (and b)) (or b))  \n     )\n   ) true false)&quot; &quot;((fn [&amp; b]\n   (doall\n     (println b)\n     (and (not (and b)) (or b))  \n     )\n   ) true false)&quot; &quot;((fn [a b]\n   (doall\n     (println b)\n     (and (not (and a b)) (or a b))  \n     )\n   ) true false)&quot; &quot;((fn [a b]\n   (doall\n     (println (str b))\n     (and (not (and a b)) (or a b))\n     )\n   ) true false)&quot; &quot;((fn [a b]\n   (doall\n     ;(println (str b))\n     (and (not (and a b)) (or a b))\n     )\n   ) true false)&quot; &quot;((fn [a b]\n   ; (doall\n   ;(println (str b))\n   (and (not (and a b)) (or a b))\n   ;)\n   ) true false)&quot; &quot;(println (str true))&quot; &quot;((fn [a b]\n    (doall\n   (println (str b))\n   (and (not (and a b)) (or a b))\n   )\n   ) true false)&quot; &quot;((fn [a b]\n    (let [_ (println (str b))]\n      (and (not (and a b)) (or a b))\n   )\n   ) true false)&quot; &quot;((fn [a b]\n    (let [_ (println (str a))]\n      (and (not (and a b)) (or a b))\n   )\n   ) true false)&quot; &quot;(or '(true false))&quot; &quot;(and '(true false))&quot; &quot;(and *1 *2)&quot; &quot;((fn [&amp; b]\n    (let [_ (println (str b))]\n      (and (not (and b)) (or b))\n   )\n   ) true false)&quot; &quot;((fn [n s]\n   (conj\n     (list (mapcat conj (rest (partition n s))))\n     (first (partition n s)))) 3 [1 2 3 4 5 6])&quot; &quot;(mapcat [:a :b :c] [1 2 3])&quot; &quot;(apply cons [:a :b :c] [1 2 3])&quot; &quot;(map cons [:a :b :c] [1 2 3])&quot; &quot;(zipmap [:a :b :c] [1 2 3])&quot; &quot;(partition 2 *2)&quot; &quot;(partition-all *3)&quot; &quot;(partition-all *1)&quot; &quot;(partition-all 2 *2)&quot; &quot;(partition-all 2 *1)&quot; &quot;(interleave [:a :b :c] [1 2 3])&quot; &quot;(interleave  [1 2 3] [:a :b :c])&quot; &quot;(partition 2 *1)&quot; &quot;(keep-indexed *1)&quot; &quot;(doc filter)&quot; &quot;(doc keep-indexed)&quot; &quot;(keep-indexed *1 *1)&quot; &quot;(keep-indexed #(true? %) *1)&quot; &quot;(true? *1)&quot; &quot;(fn [set]\n  (map true? set))&quot; &quot;(map true? *1)&quot; &quot;(map #(not= nil? %) *1)&quot; &quot;(map #(nil? %) *1)&quot; &quot;(complement *1)&quot; &quot;(doc complement)&quot; &quot;(map #(complement nil? %) *1)&quot; &quot;(map #(complement (nil? %)) *2)&quot; &quot;(map #(complement (nil? %)) *1)&quot; &quot;(\n  (fn [set1 set2]\n   (map set1 set2))\n  #{0 1 2 3} #{2 3 4 5})&quot; &quot;(\n  (fn [set1 set2]\n    (some? (map set1 set2)))\n  #{0 1 2 3} #{2 3 4 5})&quot; &quot;(\n  (fn [set1 set2]\n    (map some? (map set1 set2)))\n  #{0 1 2 3} #{2 3 4 5})&quot; &quot;(keep-indexed\n  (fn [set] (map #(some? %) set))\n  *1)&quot; &quot;(map vector [:a :b :c] [1 2 3])&quot; &quot;(into {} *1)&quot; &quot;(intro {} (map vector [:a :b :c] [1 2 3]))&quot; &quot;(into {} (map vector [:a :b :c] [1 2 3]))&quot; &quot;((fn [set1 set2]\n   (into {} (map vector set1 set2)))\n  [:a :b :c] [1 2 3])&quot; &quot;(map #(some? %) *1)&quot; &quot;(\n  (fn [set1 set2]\n    (map set1 set2))\n  #{0 1 2 3} #{2 3 4 5})&quot; &quot;(filter *1 *1)&quot; &quot;(defn gcd [a b]\n  (if (zero? b)\n    a\n    (doall\n      (println a)\n      (println b)\n      (recur b (mod a b)))))&quot; &quot;(doc doall)&quot; &quot;(doc do)&quot; &quot;(defn gcd [a b]\n  (if (zero? b)\n    a\n    (do\n        (println a)\n        (println b)\n        (recur b (mod a b)))))&quot; &quot;(doc str)&quot; &quot;(def myvar 1)&quot; &quot;(println (str \&quot;My Var is \&quot; myvar))&quot; &quot;(def myvar2 2)&quot; &quot;(println (str \&quot;My Var is \&quot; myvar \&quot; and MyVar2 is \&quot; myvar2))&quot; &quot;(defn gcd [a b]\n  (if (zero? b)\n    a\n    (recur b (mod a b))))&quot; &quot;(defn gcd [a b]\n  (if (zero? b)\n    a\n    (do\n      (println a)\n      (println b)\n      (recur b (mod a b))))\n  )&quot; &quot;(defn gcd [a b]\n  (if (zero? b)\n    a\n    (do\n      (println (str \&quot;A \&quot; a))\n      (println b)\n      (recur b (mod a b))))\n  )&quot; &quot;(defn gcd [a b]\n  (if (zero? b)\n    a\n    (do\n      (println (str \&quot;A \&quot; a str \&quot;B \&quot; b))\n      (recur b (mod a b))))\n  )&quot; &quot;(defn gcd [a b]\n  (if (zero? b)\n    a\n    (do\n      (println (str \&quot;A \&quot; a \&quot;B \&quot; b))\n      (recur b (mod a b))))\n  )&quot; &quot;(defn gcd [a b]\n  (if (zero? b)\n    a\n    (do\n      (println (str \&quot;A \&quot; a \&quot;   B \&quot; b))\n      (recur b (mod a b))))\n  )&quot; &quot;(gcd 1023 858)&quot; &quot;(mod 858 165)&quot; &quot;(mod 48 18)&quot; &quot;(mod 18 12)&quot; &quot;(mod 12 6)&quot; &quot;(gcd 48 18)&quot; &quot;(take 5 (iterate inc 1))&quot; &quot;(take 5 \n      ((fn [myfunc seed]\n         (myfunc seed)) \n        inc 1))&quot; &quot;(take 5\n      ((fn [myfunc seed]\n         (partial myfunc seed))\n        inc 1))&quot;], :remote []}}</component>
   <component name="RunManager" selected="Clojure REPL.REPL">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
@@ -316,6 +336,15 @@
       <setting name="parameters" value="" />
       <setting name="workingDir" value="" />
       <setting name="profiles" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ClojureScriptRunConfiguration" factoryName="Clojure Script">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="" />
+      <setting name="repl" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
@@ -590,22 +619,23 @@
       <workItem from="1483492693245" duration="4445000" />
       <workItem from="1483570946768" duration="17614000" />
       <workItem from="1483637761830" duration="6195000" />
-      <workItem from="1483645394482" duration="6000" />
+      <workItem from="1483645394482" duration="5027000" />
+      <workItem from="1483666086824" duration="177000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50326000" />
+    <option name="totallyTimeSpent" value="55524000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="23" width="960" height="1177" extended-state="0" />
+    <frame x="2364" y="-277" width="925" height="1177" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934684" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="REPL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28886846" sideWeight="0.502994" order="12" side_tool="true" content_ui="tabs" x="651" y="69" width="617" height="1085" />
+      <window_info id="REPL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934684" sideWeight="0.5084938" order="12" side_tool="true" content_ui="tabs" x="651" y="69" width="617" height="1085" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -616,24 +646,58 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39898348" sideWeight="0.497006" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934684" sideWeight="0.49150622" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Floobits" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934684" sideWeight="0.4978678" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Floobits" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934684" sideWeight="0.49262202" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22766885" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23723042" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934684" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="REPL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934684" sideWeight="0.507378" order="12" side_tool="true" content_ui="tabs" x="651" y="69" width="617" height="1085" />
+      <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39898348" sideWeight="0.497006" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Floobits" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934684" sideWeight="0.49262202" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23723042" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -916,18 +980,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.8.0/clojure-1.8.0.jar!/clojure/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13980">
-          <caret line="932" column="26" lean-forward="false" selection-start-line="932" selection-start-column="4" selection-end-line="932" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hello_world/core.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1905">
           <caret line="127" column="34" lean-forward="false" selection-start-line="127" selection-start-column="34" selection-end-line="127" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.8.0/clojure-1.8.0.jar!/clojure/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13980">
+          <caret line="932" column="26" lean-forward="false" selection-start-line="932" selection-start-column="4" selection-end-line="932" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -940,10 +1004,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/hello_world/help_requested.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="671">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/hello_world/Easy.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="113" column="46" lean-forward="false" selection-start-line="113" selection-start-column="46" selection-end-line="113" selection-end-column="46" />
+        <state relative-caret-position="401">
+          <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
           <folding />
         </state>
       </provider>
