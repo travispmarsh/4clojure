@@ -4,7 +4,7 @@
 
 (apply (repeat [1 2 3] 2))
 
-() #(mapcat repeat (repeat (count %1) %2) %1) [1 2 3] 2
+(#(mapcat repeat (repeat (count %1) %2) %1) [1 2 3] 2)
 
 (take 3 (iterate #(+ 3 %) 4))
 
@@ -111,12 +111,113 @@
    (into {} (map vector set1 set2)))
   [:a :b :c] [1 2 3])
 
+;;#62 Re-implement Iterate
+(__ #(* 2 %) 1)
+
+(take 5 (iterate inc 1))
+(take 5
+      ((fn my-iter [f x]
+         (cons x (lazy-seq (my-iter f (f x)))))
+        inc 1))
+
+;; #63 - Group a Sequence
+#(> % 5) [1 3 6 8]
+
+((fn [f s]
+   (apply merge-with concat (map (fn [a b] {a (vector b)}) (map f s) s)))
+  #(> % 5) [1 3 6 8])
+
+(zippy *1 [1 3 6 8])
+
+(defn zippy [l1 l2]
+  (apply merge-with concat (map (fn [a b]{a (vector b)}) l1 l2)))
+
+
 ;;#66 Greatest Common Divisor - Solved
 (fn [a b]
   (if (zero? b)
     a
     (recur b (mod a b)))
   )
+
+;; ******* #81 Set Intersection ********
+#{0 1 2 3} #{2 3 4 5})
+#{2 3}
+
+((fn [set1 set2]
+   (map set1 set2))
+  #{0 1 2 3} #{2 3 4 5})
+
+(fn [set]
+  (map #(some? %) set))
+(map #(some? %) *1)
+;; This is the same as above
+
+(keep-indexed
+  (fn [set] (map #(some? %) set))
+  *1)
+(filter *1 *1)
+
+((fn [set1 set2]
+   (set (filter (fn [e1] (contains? set2 e1)) set1)))
+  #{0 1 2 3} #{2 3 4 5})
+
+(set (filter #{0 1 2 3} #{2 3 4 5}))
+
+;; I could use some help because I thought I did this better with the
+;; functions, but I'm still failing at it
+
+;;****** #83 Half-truth *******
+
+((fn [& b]
+   (and
+     (not-every? true? b)
+     (not (nil? (some true? b)))))
+  false true)
+
+
+;; ******* #90 Cartesian Product *********
+;; I think I need things like apply, reduce, concat
+#{1 2} #{3 4}
+[[1 2] [3 4]]
+
+(map vector #{1 2} #{1 2 3 4})
+
+(apply mapcat {1 2} {3 4})
+(mapcat apply vector [:1 :2] [:3 :4])
+(map vector  [:a :b :c]
+     [:d :e :f]
+     [:g :h :i])
+
+((fn cart [& colls]
+   (println "colls " colls)
+   (println "First of Colls " (first colls))
+   (println "Rest of Colls " (rest colls))
+   (for [x (first colls)
+         left (cart (rest colls))
+         _ (println (str "X " x "Left " left))]
+     (cons x left)
+     )
+   ) [1 2] [3 4])
+;; Looks like I have the same problem gathering sets with & colls to do what
+;; I actually want to do
+
+((fn [coll1 coll2]
+   (into #{} (for [coll1 coll1
+                   coll2 coll2]
+               [coll1 coll2])) )[1 2] [3 4])
+
+(zipmap #{:a :b :c :d} #{1 2} )
+;; Why is this picking up :c 1, :b 2?  That doesn't make any sense to me
+;; My best guess is because it's a set and sets don't have any order
+
+;; #88 Symmetric Difference
+#{1 2 3 4 5 6} #{1 3 5 7}
+
+((fn [s1 s2]
+   (filter #(not s1 (distinct (concat s1 s2)))))
+  #{1 2 3 4 5 6} #{1 3 5 7})
+
 
 ;; #166 Comparisons
 (= :gt (__ < 5 1))
@@ -131,15 +232,3 @@
   < 1 1)
 
 (exp 3 3)
-
-;; #90 Cartesian Product
-#{1 2} #{3 4}
-
-(map vector #{1 2} #{1 2 3 4})
-(zipmap #{3 4 5 6} #{1 2} )
-
-
-(fn [set1 set2]
-
-  )
-
