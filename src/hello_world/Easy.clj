@@ -232,3 +232,54 @@
   < 1 1)
 
 (exp 3 3)
+
+(ns hello-world.help-requested)
+
+;;*******  #49 split a sequence *********
+3 [1 2 3 4 5 6]
+1 [:a :b :c :d]
+2 [[1 2] [3 4] [5 6]]
+
+(partition 3 [1 2 3 4 5 6])
+(first *1)
+(rest *2)
+
+((fn [n s]
+   (vector (take n s)
+           (drop n s)))
+  2 [[1 2] [3 4] [5 6]])
+
+((fn [n s]
+   (conj
+     (list (mapcat identity (rest (partition n s))))
+     (first (partition n s))
+     ))
+  2 [[1 2] [3 4] [5 6]])
+;; for some reason this works in my REPL, but not in the solution set
+
+
+;; #107 Simple closures
+
+(fn [n]
+  (fn [x]
+    (reduce * (repeat n x))))
+
+((partexp 2) 16)
+(exp 2 16)
+
+(defn exp [n x]
+  (if (zero? n)
+    1
+    (* x (exp (dec n) x))))
+
+(defn partexp [n]
+  (partial exp n))
+
+(fn exp [n]
+  (fn [x]
+    (if (zero? n)
+      1
+      (* x (exp (dec n) x))))
+  )
+
+;; I don't know how to do this without using the defn variant.
